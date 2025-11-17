@@ -35,9 +35,7 @@ def payment(request):
         subject = f"New Contact Form Submission from {details['firstName']}"
         recipient = ['shopifyus33443@gmail.com']
         
-        # send_mail(subject, message, settings.EMAIL_HOST_USER, recipient, fail_silently=False)
         send_mail(subject, message, settings.DEFAULT_FROM_EMAIL, recipient, fail_silently=False)
-        # print(message)
         
         return render(request, 'endPage.html') 
 
